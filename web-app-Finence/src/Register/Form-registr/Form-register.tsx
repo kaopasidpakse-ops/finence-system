@@ -24,7 +24,7 @@ function FormRegister() {
     }
 
     try {
-      await axios.post("http://localhost:3000/api/register", userdata);
+      await axios.post("https://finence-system.onrender.com/api/register", userdata);
 
       alert("Registration Successful");
 

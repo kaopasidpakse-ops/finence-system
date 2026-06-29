@@ -36,7 +36,7 @@ function edit({ setShowEditForm , ExpenseEditData } : { showEditForm: boolean; s
 
         try {
             const res = await axios.put(
-                `http://localhost:3000/api/EditExpense/${EditDate._id}`,
+                `https://finence-system.onrender.com/api/EditExpense/${EditDate._id}`,
 
                 EditDate,
                 {

@@ -33,7 +33,7 @@ const AddExpenseData = async(e: React.FormEvent) => {
     try {
 const token = localStorage.getItem("token");
         const res = await axios.post(
-            "http://localhost:3000/api/AddExpense",
+            "https://finence-system.onrender.com/api/AddExpense",
             dataExpense
             , {
                 headers: {

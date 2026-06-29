@@ -24,7 +24,7 @@ function TotalIncome() {
         
 useEffect(() => {
 
-    axios.get("http://localhost:3000/api/Total-income",
+    axios.get("https://finence-system.onrender.com/api/Total-income",
     {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`

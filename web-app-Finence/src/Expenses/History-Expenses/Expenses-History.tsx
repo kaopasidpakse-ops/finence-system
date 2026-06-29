@@ -23,7 +23,7 @@ function ExpensesHistory() {
 
 
 const fetchExpensesData = () => {
- axios.get("http://localhost:3000/api/expenses", {
+ axios.get("https://finence-system.onrender.com/api/expenses", {
   headers: {
      Authorization: `Bearer ${localStorage.getItem("token")}`
   }
@@ -65,7 +65,7 @@ useEffect(() => {
 
 
 const ExpenseDelete = (_id:string) => {
-    axios.delete(`http://localhost:3000/api/DeleteExpense/${_id}`, {
+    axios.delete(`https://finence-system.onrender.com/api/DeleteExpense/${_id}`, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

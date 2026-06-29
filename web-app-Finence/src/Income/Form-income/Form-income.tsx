@@ -49,7 +49,7 @@ const AddIncomeData = async  (e: React.FormEvent) => {
 const token = localStorage.getItem("token");
 
 const res = await axios.post(
-  "http://localhost:3000/api/AddIncome",
+  "https://finence-system.onrender.com/api/AddIncome",
   dataIncome,
   {
     headers: {

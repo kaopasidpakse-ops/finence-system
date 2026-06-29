@@ -10,7 +10,7 @@ import "./Header.css";
     useEffect(() => {
         const fetchNetBalance = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/Total-money', {
+                const response = await axios.get('https://finence-system.onrender.com/api/Total-money', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`
                     }

@@ -25,7 +25,7 @@ function IncomeHistory() {
 
 
    const fetchIncomeData = () => {
-    axios.get("http://localhost:3000/api/income", {
+    axios.get("https://finence-system.onrender.com/api/income", {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -46,7 +46,7 @@ function IncomeHistory() {
     }, []);
 
     const IncomeDelete = (_id:string) => {
-        axios.delete(`http://localhost:3000/api/DeleteIncome/${_id}`
+        axios.delete(`https://finence-system.onrender.com/api/DeleteIncome/${_id}`
         , {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`

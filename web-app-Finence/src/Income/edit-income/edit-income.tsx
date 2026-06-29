@@ -37,7 +37,7 @@ const [EditDate, setEditDate] = useState<IncomeType>({
 
         try {
             const res = await axios.put(
-                `http://localhost:3000/api/EditIncome/${EditDate._id}`,
+                `https://finence-system.onrender.com/api/EditIncome/${EditDate._id}`,
                 EditDate,
                 {
                     headers: {
