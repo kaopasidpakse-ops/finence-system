@@ -1,0 +1,88 @@
+.navbar-income{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+   
+   
+    width :auto;
+    height: 60px;
+    
+}
+.navbar-income ul{
+    display: flex;
+    align-items: center;
+   background-color: rgb(218, 227, 222);
+    list-style: none;
+    width: auto;
+   padding: 5px 5px;
+   
+    border-radius: 8px;
+}
+.navbar-income ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    margin:0 20px;
+    border-radius: 8px;
+    border: none;
+}   
+ 
+.navbar-income button{
+background-color: rgb(218, 227, 222);
+    border: none;padding: 1px 10px;
+    border: none;
+    border-radius: 8px;
+    
+}
+.register-button{
+    margin-left: 20px;
+    
+}
+.register-button a{
+    text-decoration: none;
+    color: #fe040479;
+    font-size: 18px;
+    margin: 10px 20px;
+   
+    
+}
+   
+
+
+@media (max-width: 768px){
+    .navbar-income{
+        padding: 0 20px;
+    }
+    .navbar-income ul li a {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    .navbar-income button {
+        padding: 1px 8px;
+        font-size: 14px;
+    }   
+ 
+}
+@media (max-width: 500px){
+ 
+.register-button {
+    margin-left: 5px;
+    
+   
+    
+    
+}
+.register-button a {
+    font-size: 14px;
+    margin: 5px 0;
+
+ 
+}
+}
+
+
+
+

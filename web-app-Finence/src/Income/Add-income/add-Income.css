@@ -1,0 +1,43 @@
+.container-income{
+  
+    width:auto;
+    height: 70px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 50px;
+    
+}
+
+.add-income-button {
+    background-color: rgb(218, 227, 222);
+    border: none;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 768px){
+   
+    .container-income{
+        
+        padding: 0 30px;
+        
+    }
+    .Income-m{
+        width: 200px;
+
+    }
+
+    .add-income-button {
+        padding: 5px 5px;
+        font-size: 13px;
+        gap: 0px;
+       
+    }
+    
+    
+}

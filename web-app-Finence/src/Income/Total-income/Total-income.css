@@ -1,0 +1,42 @@
+.Total-container{
+    
+    display: flex;
+    justify-content: space-between;
+   margin :10px 25px;
+    padding: 18px;
+    
+}
+.Total {
+   width: 100%;
+    
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 10px;
+    
+   
+    
+}
+.Total-income{
+  
+   margin-bottom: 20px;
+   font-size: 20px;
+}
+
+.money-income{
+   
+    margin: 15px 0;
+    
+    
+}
+@media (max-width: 768px){
+    .Total-container{
+        
+        margin: 10px 5px;
+    }
+    .Total {
+        margin: 10px 0;
+    }
+}
+
+   

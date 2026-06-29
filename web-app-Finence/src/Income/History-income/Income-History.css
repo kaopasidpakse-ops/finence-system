@@ -1,0 +1,75 @@
+.container-income-history{
+    margin: 20px 50px;
+    padding: 20px;
+     border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    height: auto;
+}
+.income-history{
+    margin-bottom: 30px;
+
+}
+.subtitle{
+    margin-top:10px
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+   
+}
+thead th{
+    text-align: left;
+    padding:10px 0px
+    
+}
+tbody td{
+    padding: 20px 0px;
+    border-top: 0.1px solid rgba(0, 0, 0, 0.3);
+    vertical-align: top;
+}
+.tag {
+  background: #eee;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.icon-edit, .icon-delete {
+    cursor: pointer;
+    margin-right: 20px;
+}
+.icon-delete {
+    margin-left: 25px;
+}
+
+@media (max-width: 768px){
+    .container-income-history{
+        margin: 10px 20px;
+        padding: 10px;
+    }
+    .subtitle{
+        font-size: 14px;
+    }
+    thead th, tbody td{
+        padding: 10px 5px;
+        font-size: 10px;
+        width: 300px;
+    }
+    .Amount-income {
+        font-size: 11px;
+        width: 200px;
+
+    }
+
+  
+    .tag {
+        font-size: 10px;
+        padding: 2px 8px;
+    }
+    .icon-edit, .icon-delete {
+        margin-right: 5px;
+       
+    }
+
+
+}

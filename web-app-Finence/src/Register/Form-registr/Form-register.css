@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.register-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.register-card{
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+.register-card h1{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.register-card label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.register-card input,
+.register-card select{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    background: #eceaea;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.btn-group{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.register-btn,
+.back-btn{
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-btn{
+    background: black;
+    color: white;
+}
+
+.back-btn{
+    background: #d9dfdc;
+}
+
+a{
+    flex: 1;
+}
+.btn-group a button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+
+/* Mobile */
+@media (max-width: 600px){
+
+    .register-card{
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .register-card h1{
+        font-size: 28px;
+    }
+
+    .register-card label{
+        font-size: 16px;
+    }
+
+    .register-card input,
+    .register-card select{
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .btn-group{
+        flex-direction: column;
+    }
+
+    .register-btn,
+    .back-btn{
+        width: 100%;
+    }
+}

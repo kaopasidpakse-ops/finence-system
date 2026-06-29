@@ -1,0 +1,40 @@
+.container-expenses{
+  
+    width:auto;
+    height: 70px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 50px;
+    
+}
+
+.add-expense-button {
+    background-color: rgb(218, 227, 222);
+    border: none;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 768px){
+   
+    .container-expenses{
+        
+        padding: 0 35px;
+        
+    }
+
+    .add-expense-button {
+        padding: 5px 5px;
+        width: 120px;
+        font-size: 13px;
+        gap: 0px;
+       
+    }
+    
+    
+}

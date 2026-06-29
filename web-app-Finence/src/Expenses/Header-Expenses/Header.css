@@ -1,0 +1,35 @@
+.header-expenses{
+    
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width:auto;
+    height: 70px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.name-money-expenses{
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px){
+   
+    .header-expenses{
+        
+        padding: 0 30px;
+        font-size: 14px;
+        
+    }
+
+    .name-money-expenses {
+        font-size: 14px;
+        margin-bottom: 4px;
+       
+    }
+    .user-info-expenses {
+        font-size: 14px;
+    }
+    
+    
+}
