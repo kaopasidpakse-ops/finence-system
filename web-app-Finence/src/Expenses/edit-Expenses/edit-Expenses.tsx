@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./edit-Expenses.css";
 import axios from "axios";
+const API = import.meta.env.VITE_API_URL;
 
  type ExpenseType = {
         _id: string;
@@ -36,7 +37,7 @@ function edit({ setShowEditForm , ExpenseEditData } : { showEditForm: boolean; s
 
         try {
             const res = await axios.put(
-                `https://finence-system.onrender.com/api/EditExpense/${EditDate._id}`,
+                `${API}/api/EditExpense/${EditDate._id}`,
 
                 EditDate,
                 {

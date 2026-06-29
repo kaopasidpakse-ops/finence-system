@@ -1,6 +1,7 @@
 import "./Form-Expenses.css"
 import { useState } from "react";
 import axios from "axios";
+const API = import.meta.env.VITE_API_URL;
 
 type ExpenseType = {
     Date: string;
@@ -33,7 +34,7 @@ const AddExpenseData = async(e: React.FormEvent) => {
     try {
 const token = localStorage.getItem("token");
         const res = await axios.post(
-            "https://finence-system.onrender.com/api/AddExpense",
+            `${API}/api/AddExpense`,
             dataExpense
             , {
                 headers: {

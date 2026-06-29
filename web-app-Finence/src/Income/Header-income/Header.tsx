@@ -1,6 +1,7 @@
  import "./Header.css";
  import { useEffect, useState , } from "react";
  import axios from "axios";
+ const API = import.meta.env.VITE_API_URL;
  function Header() {
      const role = localStorage.getItem("role");// ດຶງ role ຈາກ localStorage
      const username = localStorage.getItem("username"); // ດຶງ username ຈາກ localStorage
@@ -12,7 +13,7 @@
     useEffect(() => {
         const fetchNetBalance = async () => {
             try {
-                const response = await axios.get('https://finence-system.onrender.com/api/Total-money',
+                const response = await axios.get(`${API}/api/Total-money`,
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem("token")}`

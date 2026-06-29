@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./Form-income.css";
+const API = import.meta.env.VITE_API_URL;
 
 type IncomeType = {
     Date: string;
@@ -49,7 +50,7 @@ const AddIncomeData = async  (e: React.FormEvent) => {
 const token = localStorage.getItem("token");
 
 const res = await axios.post(
-  "https://finence-system.onrender.com/api/AddIncome",
+            `${API}/api/AddIncome`,
   dataIncome,
   {
     headers: {
