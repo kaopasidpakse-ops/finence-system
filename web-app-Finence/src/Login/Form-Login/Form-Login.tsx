@@ -3,6 +3,7 @@ import { useState } from "react";
 import {  useNavigate } from "react-router-dom";
 
 import axios from "axios";  
+const API = import.meta.env.VITE_API_URL;
 
 type LoginDataType = {
     username: string;
@@ -28,7 +29,7 @@ function FormLogin() {
         }   
         try {
             const res = await axios.post(
-                "https://finence-system.onrender.com/api/login",
+                `${API}/api/login`,
                 LoginData
             );
             // console.log(res.data);

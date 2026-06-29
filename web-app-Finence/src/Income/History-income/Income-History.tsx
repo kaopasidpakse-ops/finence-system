@@ -2,6 +2,7 @@ import {useEffect, useState } from "react";
 import "./Income-History.css";
 import Edit from "../edit-income/edit-income";
 import axios from "axios";
+const API = import.meta.env.VITE_API_URL;
 
 type IncomeType = {
     _id: string;
@@ -25,7 +26,7 @@ function IncomeHistory() {
 
 
    const fetchIncomeData = () => {
-    axios.get("https://finence-system.onrender.com/api/income", {
+    axios.get(`${API}/api/income`, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -46,7 +47,7 @@ function IncomeHistory() {
     }, []);
 
     const IncomeDelete = (_id:string) => {
-        axios.delete(`https://finence-system.onrender.com/api/DeleteIncome/${_id}`
+        axios.delete(`${API}/api/DeleteIncome/${_id}`
         , {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`

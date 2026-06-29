@@ -1,6 +1,7 @@
 import "./Total-income.css"
 import { useEffect,useState } from "react";
 import axios from "axios";
+const API = import.meta.env.VITE_API_URL;
 
 type incomeType = {
     totalAmount: number;
@@ -24,7 +25,7 @@ function TotalIncome() {
         
 useEffect(() => {
 
-    axios.get("https://finence-system.onrender.com/api/Total-income",
+    axios.get(`${API}/api/Total-income`,
     {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`

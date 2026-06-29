@@ -2,6 +2,7 @@ import {  useEffect, useState } from "react";
 import "./Expenses-History.css";
 import Edit from "../edit-Expenses/edit-Expenses";
 import axios from "axios";
+const API = import.meta.env.VITE_API_URL;
 function ExpensesHistory() {
 
   const [ExpenseEditData, setExpenseEditData] = useState<ExpenseType>({
@@ -23,7 +24,7 @@ function ExpensesHistory() {
 
 
 const fetchExpensesData = () => {
- axios.get("https://finence-system.onrender.com/api/expenses", {
+ axios.get(`${API}/api/expenses`, {
   headers: {
      Authorization: `Bearer ${localStorage.getItem("token")}`
   }
@@ -65,7 +66,7 @@ useEffect(() => {
 
 
 const ExpenseDelete = (_id:string) => {
-    axios.delete(`https://finence-system.onrender.com/api/DeleteExpense/${_id}`, {
+    axios.delete(`${API}/api/DeleteExpense/${_id}`, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./edit-income.css";
 import axios from "axios";
+const API = import.meta.env.VITE_API_URL;
 
 type IncomeType = {
     _id: string;
@@ -37,7 +38,7 @@ const [EditDate, setEditDate] = useState<IncomeType>({
 
         try {
             const res = await axios.put(
-                `https://finence-system.onrender.com/api/EditIncome/${EditDate._id}`,
+                `${API}/api/EditIncome/${EditDate._id}`,
                 EditDate,
                 {
                     headers: {

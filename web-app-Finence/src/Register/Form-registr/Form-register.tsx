@@ -1,6 +1,7 @@
 import "./Form-register.css";
 import { useState } from "react";
 import axios from "axios";
+const API = import.meta.env.VITE_API_URL;
 
 type UserDataType = {
   username: string;
@@ -24,7 +25,7 @@ function FormRegister() {
     }
 
     try {
-      await axios.post("https://finence-system.onrender.com/api/register", userdata);
+      await axios.post(`${API}/api/register`, userdata);
 
       alert("Registration Successful");
 
